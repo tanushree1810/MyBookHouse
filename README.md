@@ -4,7 +4,7 @@ A comprehensive MERN Stack Online Book Store. Features authentication, admin pan
 
 ## Tech Stack
 
-- *Frontend*: HTML, CSS, JavaScript
+- *Frontend*: HTML, CSS, JavaScript, TailWindCSS
 - *Backend*: Node.js
 - *Database*: MongoDB
 
@@ -48,12 +48,12 @@ npm install
 ### Configure Environment Variables:
 
 #### Install `dotenv` Package
-First, make sure you have 'dotenv' installed to manage environment variables securely.
+First, make sure you have 'dotenv' installed to the mern-server folder to manage environment variables securely.
 ```
 npm install dotenv
 ```
 #### Create a `.env` File
-Create a '.env' file in your project directory and add your MongoDB connection details. Ensure you never commit this file to version control for security reasons.
+Create a '.env' file in your project directory(in mern-server folder) and add your MongoDB connection details. 
 ```
 # .env file
 MONGODB_USER=yourUsername
