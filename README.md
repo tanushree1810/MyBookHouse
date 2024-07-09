@@ -27,3 +27,41 @@ Caption: Upload Book page
 
 ![managebook](https://github.com/tanushree1810/MyBookHouse/assets/93597823/f74db1ca-afb4-4acd-b345-09ccbca57261)
 Caption: Manage Books page
+
+## Run Locally
+### Clone the Repository:
+```
+git clone https://github.com/tanushree1810/MyBookHouse.git
+cd MyBookHouse
+```
+### Install Dependencies:
+Navigate to the server directory and install dependencies:
+```
+cd mern-server
+npm install
+```
+Then, navigate to the client directory and install dependencies:
+```
+cd ../mern-client
+npm install
+```
+### Configure Environment Variables:
+Create a .env file in the root directory of the server and add the following environment variables:
+```
+MONGODB_USER=yourUsername
+MONGODB_PASS=yourPassword
+MONGODB_HOST=yourHost
+```
+### Start the Server:
+Navigate to the server directory and start the server:
+```
+cd mern-server
+npm start
+```
+### Start the Client:
+In a new terminal, navigate to the client directory and start the client:
+```
+cd mern-client
+npm run dev
+```
+### This will start the client application on http://localhost:5713.
