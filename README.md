@@ -46,8 +46,16 @@ cd ../mern-client
 npm install
 ```
 ### Configure Environment Variables:
-Create a .env file in the root directory of the server and add the following environment variables:
+
+#### Install `dotenv` Package
+First, make sure you have 'dotenv' installed to manage environment variables securely.
 ```
+npm install dotenv
+```
+#### Create a `.env` File
+Create a '.env' file in your project directory and add your MongoDB connection details. Ensure you never commit this file to version control for security reasons.
+```
+# .env file
 MONGODB_USER=yourUsername
 MONGODB_PASS=yourPassword
 MONGODB_HOST=yourHost
