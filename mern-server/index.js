@@ -16,8 +16,7 @@ app.get('/', (req, res) => {
 
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
 
-const uri = `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASS}@${process.env.MONGODB_HOST}/${process.env.MONGODB_DB}?retryWrites=true&w=majority&appName=${process.env.MONGODB_DB}`;
-
+const uri = process.env.MONGODB_URI
 const client = new MongoClient(uri, {
   serverApi: {
     version: ServerApiVersion.v1,
