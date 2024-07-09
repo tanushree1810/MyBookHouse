@@ -56,9 +56,7 @@ npm install dotenv
 Create a '.env' file in your project directory(in mern-server folder) and add your MongoDB connection details. 
 ```
 # .env file
-MONGODB_USER=yourUsername
-MONGODB_PASS=yourPassword
-MONGODB_HOST=yourHost
+MONGODB_URI=your mongodb uri
 ```
 ### Start the Server:
 Navigate to the server directory and start the server:
