@@ -1,4 +1,5 @@
 const express = require('express');
+require('dotenv').config();
 const app = express();
 const port = process.env.PORT || 5000;
 const cors = require('cors');
@@ -11,7 +12,8 @@ app.get('/', (req, res) => {
 });
 
 const { MongoClient, ServerApiVersion, ObjectId } = require('mongodb');
-const uri = "mongodb+srv://book-store:k0vpjbMeCXbsgFso@booking.pfu0hi9.mongodb.net/?retryWrites=true&w=majority&appName=Booking";
+//const uri = "mongodb+srv://book-store:k0vpjbMeCXbsgFso@booking.pfu0hi9.mongodb.net/?retryWrites=true&w=majority&appName=Booking";
+const uri = `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASS}@${process.env.MONGODB_HOST}/${process.env.MONGODB_DB}?retryWrites=true&w=majority&appName=Booking`;
 
 const client = new MongoClient(uri, {
   serverApi: {
